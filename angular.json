@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SmallChessApp": {
+    "AngularLearnerApp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/small-chess-app",
+            "outputPath": "dist/angular-learner-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "SmallChessApp:build:production"
+              "browserTarget": "AngularLearnerApp:build:production"
             },
             "development": {
-              "browserTarget": "SmallChessApp:build:development"
+              "browserTarget": "AngularLearnerApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SmallChessApp:build"
+            "browserTarget": "AngularLearnerApp:build"
           }
         },
         "test": {
